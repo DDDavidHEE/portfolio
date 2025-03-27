@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DavidHE - Portfolio</title>
+
+  <!-- Font Awesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Quick enhancements for the Home section */
+    #home {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5rem 10%;
+      background: #fff;
+    }
+
+    .home-text h1 {
+      font-size: 4rem;
+      margin: 0;
+      font-weight: 800;
+    }
+
+    .home-text p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+
+    .home-profile img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #e0e0e0;
+    }
+
+    .social-links {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .social-links a {
+      background-color: #f0f4f8;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #1a1a1a;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background 0.3s;
+    }
+
+    .social-links a:hover {
+      background-color: #dbe4ec;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="home-text">
+      <h1>Hello,</h1>
+      <h1>I am</h1>
+      <h1>DavidHE!</h1>
+      <p>Nguyen Dai Hoang, a passionate developer specializing in web technologies and computer science.</p>
+      <div class="social-links">
+  <a href="mailto:davidhoangem@gmail.com" target="_blank">
+    <i class="fas fa-envelope"></i> <span>Email</span>
+  </a>
+  <a href="https://github.com/DDDavidHEE" target="_blank">
+    <i class="fab fa-github"></i> <span>GitHub</span>
+  </a>
+  <a href="https://linkedin.com/in/davidhoangem-davidhe-88694a318
+ " target="_blank">
+    <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
+  </a>
+  <a href="https://facebook.com/hoang.snguyens.589583" target="_blank">
+    <i class="fab fa-facebook"></i> <span>Facebook</span>
+  </a>
+  <a href="https://instagram.com/davidheeeee" target="_blank">
+    <i class="fab fa-instagram"></i> <span>Instagram</span>
+  </a>
+</div>
+
+    </div>
+    <div class="home-profile">
+      <img src="img/profile.jpg" alt="David's Profile" />
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="section">
+    <div class="container">
+      <h2>My Blog</h2>
+      <p>Here, I share my thoughts on various topics related to web development, AI, and more!</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div id="projects-list"></div>
+    </div>
+  </section>
+  <!-- What I Learned Section -->
+<section id="learned" class="section dark-section">
+  <div class="container">
+    <h2>What I Learned?</h2>
+
+    <div class="learning-block">
+      <h3>Programming & Development</h3>
+      <p><strong>2023 – Present</strong></p>
+      <ul>
+        <li>Languages: Python, JavaScript, HTML, CSS, C#</li>
+        <li>Frameworks & Tools: FastAPI, PyCharm Community, Anaconda, Figma</li>
+        <li>Software Engineering Concepts: OOP, Data Structures & Algorithms, Database Management, Web Development</li>
+      </ul>
+    </div>
+
+    <div class="learning-block">
+      <h3>Mathematics & Theoretical Knowledge</h3>
+      <p><strong>2023</strong></p>
+      <ul>
+        <li>Advanced Mathematics</li>
+        <li>Discrete Mathematics</li>
+        <li>Data Structures & Algorithms</li>
+      </ul>
+    </div>
+
+    <div class="learning-block">
+      <h3>Software Engineering & System Design</h3>
+      <p><strong>2024 – Present</strong></p>
+      <ul>
+        <li>Software Testing</li>
+        <li>UI/UX Design</li>
+        <li>Information System Analysis & Design</li>
+        <li>Application Development Technologies</li>
+      </ul>
+    </div>
+
+    <div class="learning-block">
+      <h3>Machine Learning & Cloud Computing</h3>
+      <p><strong>2025 – Present</strong></p>
+      <ul>
+        <li>Machine Learning by Prof. Andrew Ng (Stanford University)</li>
+        <li>Convolutional Neural Networks by Prof. Fei-Fei Li (Stanford University)</li>
+        <li>Cloud Computing & Data by Prof. Young-Woo Kwon</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-card" onclick="openModal()">
+        <img src="img/profile.jpg" alt="David's Profile" class="profile-img" />
+        <h3>David (DavidHE)</h3>
+        <p>I'm an undergraduate student in website development at the School of Information and Communication Technology, Thai Nguyen University.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="social-links">
+          <a href="mailto:davidhoangem@gmail.com" target="_blank">
+    <i class="fas fa-envelope"></i> <span>Email</span>
+  </a>
+  <a href="https://github.com/DDDavidHEE" target="_blank">
+    <i class="fab fa-github"></i> <span>GitHub</span>
+  </a>
+  <a href="https://linkedin.com/in/davidhoangem-davidhe-88694a318
+ " target="_blank">
+    <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
+  </a>
+  <a href="https://facebook.com/hoang.snguyens.589583" target="_blank">
+    <i class="fab fa-facebook"></i> <span>Facebook</span>
+  </a>
+  <a href="https://instagram.com/davidheeeee" target="_blank">
+    <i class="fab fa-instagram"></i> <span>Instagram</span>
+  </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/model.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/controller.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

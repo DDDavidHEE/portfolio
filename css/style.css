@@ -1,0 +1,254 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Navigation Bar Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0; /* Increased padding for better spacing */
+    position: fixed; /* Fixed positioning */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the nav bar is always on top */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 25px; /* Adjusted margin for more space */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em; /* Increased font size for better readability */
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transition for scaling */
+}
+
+nav ul li a:hover {
+    color: #1e90ff; /* Hover effect for links */
+    transform: scale(1.1); /* Slight scaling on hover for interactivity */
+}
+
+nav ul li a.active {
+    color: #005f99; /* Active link color */
+}
+
+/* Section Styling */
+.section {
+    padding: 80px 20px; /* Increased padding for more spacing */
+    background-color: #fff;
+    margin: 40px 0;
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px; /* Space below headings */
+}
+
+p {
+    font-size: 1.3em; /* Larger text for better readability */
+    color: #555;
+    line-height: 1.8; /* Better line spacing */
+}
+
+/* Social Links Styling (Icons only) */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjusted gap for more space between icons */
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #0077cc;
+    font-size: 2em; /* Larger icons */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #005f99; /* Change color on hover */
+    transform: scale(1.2); /* Slight scaling effect on hover */
+}
+
+/* Button Styling */
+button {
+    background-color: #0077cc;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f99; /* Darker color on hover */
+    transform: scale(1.05); /* Slight scaling on hover for interactivity */
+}
+
+/* Alert Styling */
+.alert {
+    display: none; /* Hidden by default */
+    background-color: #f44336; /* Red for errors */
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.alert.success {
+    background-color: #4CAF50; /* Green for success */
+}
+
+.alert.error {
+    background-color: #f44336; /* Red for error */
+}
+
+/* Responsive Layout for Mobile Devices */
+@media (max-width: 768px) {
+    /* Make navigation items stack vertically */
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between vertical items */
+    }
+
+    .section {
+        padding: 60px 20px; /* Adjusted padding for mobile screens */
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    /* Adjust social links for smaller screens */
+   /* Social Links Styling with Icons and Text */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center; /* Center icons and text vertically */
+    text-decoration: none;
+    color: #333;
+    font-size: 1em; /* Smaller font size for text */
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+}
+
+.social-links a i {
+    font-size: 1.4em; /* Slightly larger icons */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.social-links a:hover {
+    color: #0077cc; /* Color on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.social-links a span {
+    font-size: 0.9em; /* Slightly smaller text */
+    font-weight: normal; /* Make the text lighter than the icon */
+}
+
+}
+/* What I Learned Section */
+.dark-section {
+    background-color: #111;
+    color: #fff;
+    padding: 80px 20px;
+    margin: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dark-section h2 {
+    font-size: 2.5em;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.learning-block {
+    margin-bottom: 40px;
+}
+
+.learning-block h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.learning-block p {
+    font-weight: bold;
+    color: #bbbbbb;
+    margin: 8px 0;
+}
+
+.learning-block ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #dddddd;
+}
+
+.learning-block ul li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .dark-section h2 {
+        font-size: 2em;
+    }
+
+    .learning-block h3 {
+        font-size: 1.4em;
+    }
+
+    .learning-block ul li {
+        font-size: 1em;
+    }
+}
+
